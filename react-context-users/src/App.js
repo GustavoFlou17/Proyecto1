@@ -1,9 +1,13 @@
-import React from "react";
-import UsersList from "./components/UsersList";
-import Profile from "./components/Profile";
+import './App.css';
 
-import UserState from "./context/User/UserState";
-import "bootstrap/dist/css/bootstrap.min.css";
+//Importar componentes
+import Profile from './components/Profile'
+import UserList from './components/UserList'
+
+//Importar context
+import UserState from './context/User/UserState';
+
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
@@ -11,7 +15,7 @@ function App() {
       <div className="container p-4">
         <div className="row">
           <div className="col-md-7">
-            <UsersList />
+            <UserList />
           </div>
           <div className="col-md-5">
             <Profile />
